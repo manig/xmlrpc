@@ -441,7 +441,7 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0440;
 			};
 			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "XMLRPC" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -605,6 +605,7 @@
 			baseConfigurationReference = 0799AF0B0F67227F00B71B22 /* XMLRPCUnitTestsDevelopment.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
@@ -618,6 +619,7 @@
 			baseConfigurationReference = 0799AF0C0F67227F00B71B22 /* XMLRPCUnitTestsRelease.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
@@ -631,6 +633,7 @@
 			baseConfigurationReference = 0799AF100F6722D600B71B22 /* XMLRPCDevelopment.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				VERSION_INFO_FILE = "";
 			};
 			name = Development;
@@ -640,6 +643,7 @@
 			baseConfigurationReference = 0799AF110F6722D600B71B22 /* XMLRPCRelease.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				VERSION_INFO_FILE = "";
 			};
 			name = Release;
