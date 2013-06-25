@@ -10,13 +10,14 @@ static char base64EncodingTable[64] = {
 
 @implementation NSString (NSStringAdditions)
 
-+ (NSString *)stringByGeneratingUUID {
++ (NSString *)stringByGeneratingUUID
+{
     CFUUIDRef UUIDReference = CFUUIDCreate(nil);
     CFStringRef temporaryUUIDString = CFUUIDCreateString(nil, UUIDReference);
     
     CFRelease(UUIDReference);
     
-    return [NSMakeCollectable(temporaryUUIDString) autorelease];
+    return (__bridge_transfer NSString *) temporaryUUIDString;
 }
 
 + (NSString *)base64StringFromData: (NSData *)data length: (int)length {
@@ -126,6 +127,11 @@ static char base64EncodingTable[64] = {
     [string replaceOccurrencesOfString: @"<"  withString: @"&lt;" options: NSLiteralSearch range: NSMakeRange(0, [string length])];
     
     return [NSString stringWithString: string];
+}
+
+- (NSString*)stringWithPercentEscape
+{    
+    return (NSString *) CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(NULL,(CFStringRef) self.mutableCopy, NULL, CFSTR("￼=,!$&'()*+;@?\n\"<>#\t :/"),kCFStringEncodingUTF8));
 }
 
 @end

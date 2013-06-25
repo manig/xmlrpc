@@ -77,36 +77,34 @@
 #pragma mark -
 
 - (void)setMethod: (NSString *)method withParameters: (NSArray *)parameters {
-    if (myMethod)    {
-        [myMethod release];
-    }
-    
-    if (!method) {
+    if (!method)
+    {
         myMethod = nil;
-    } else {
-        myMethod = [method retain];
+    }
+    else
+    {
+        myMethod = method;
     }
     
-    if (myParameters) {
-        [myParameters release];
-    }
-    
-    if (!parameters) {
+    if (!parameters)
+    {
         myParameters = nil;
-    } else {
-        myParameters = [parameters retain];
+    }
+    else
+    {
+        myParameters = parameters;
     }
 }
 
-- (void)setParameters: (NSArray*)parameters {
-    if (myParameters) {
-        [myParameters release];
-    }
-    
-    if (!parameters) {
+- (void)setParameters: (NSArray*)parameters
+{
+    if (!parameters)
+    {
         myParameters = nil;
-    } else {
-        myParameters = [parameters retain];
+    }
+    else
+    {
+        myParameters = parameters;
     }
 }
 
@@ -121,13 +119,6 @@
 }
 
 #pragma mark -
-
-- (void)dealloc {
-    [myMethod release];
-    [myParameters release];
-    
-    [super dealloc];
-}
 
 @end
 
@@ -156,7 +147,7 @@
         return [self encodeArray: object];
     } else if ([object isKindOfClass: [NSDictionary class]]) {
         return [self encodeDictionary: object];
-    } else if (((CFBooleanRef)object == kCFBooleanTrue) || ((CFBooleanRef)object == kCFBooleanFalse)) {
+    } else if (((__bridge CFBooleanRef)object == kCFBooleanTrue) || ((__bridge CFBooleanRef)object == kCFBooleanFalse)) {
         return [self encodeBoolean: (CFBooleanRef)object];
     } else if ([object isKindOfClass: [NSNumber class]]) {
         return [self encodeNumber: object];

@@ -12,4 +12,6 @@
 
 - (NSString *)escapedString;
 
+- (NSString*)stringWithPercentEscape;
+
 @end

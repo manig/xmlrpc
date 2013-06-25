@@ -49,12 +49,6 @@
 
 #pragma mark -
 
-- (void)dealloc {
-    [myParser release];
-    [myParserDelegate release];
-    
-    [super dealloc];
-}
 
 @end
 

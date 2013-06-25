@@ -31,21 +31,20 @@
 - (id)initWithXMLRPCRequest: (XMLRPCRequest *)request delegate: (id<XMLRPCConnectionDelegate>)delegate manager: (XMLRPCConnectionManager *)manager {
     self = [super init];
     if (self) {
-        myManager = [manager retain];
-        myRequest = [request retain];
-        myIdentifier = [[NSString stringByGeneratingUUID] retain];
+        myManager = manager;
+        myRequest = request;
+        myIdentifier = [NSString stringByGeneratingUUID];
         myData = [[NSMutableData alloc] init];
         
         myConnection = [[NSURLConnection alloc] initWithRequest: [request request] delegate: self];
         
-        myDelegate = [delegate retain];
+        myDelegate = delegate;
         
         if (myConnection) {
             NSLog(@"The connection, %@, has been established!", myIdentifier);
         } else {
             NSLog(@"The connection, %@, could not be established!", myIdentifier);
             
-            [self release];
             
             return nil;
         }
@@ -58,13 +57,13 @@
 
 + (XMLRPCResponse *)sendSynchronousXMLRPCRequest: (XMLRPCRequest *)request error: (NSError **)error {
     NSHTTPURLResponse *response = nil;
-    NSData *data = [[[NSURLConnection sendSynchronousRequest: [request request] returningResponse: &response error: error] retain] autorelease];
+    NSData *data = [NSURLConnection sendSynchronousRequest: [request request] returningResponse: &response error: error];
     
     if (response) {
         NSInteger statusCode = [response statusCode];
         
         if ((statusCode < 400) && data) {
-            return [[[XMLRPCResponse alloc] initWithData: data] autorelease];
+            return [[XMLRPCResponse alloc] initWithData: data];
         }
     }
     
@@ -74,7 +73,7 @@
 #pragma mark -
 
 - (NSString *)identifier {
-    return [[myIdentifier retain] autorelease];
+    return myIdentifier;
 }
 
 #pragma mark -
@@ -91,16 +90,6 @@
 
 #pragma mark -
 
-- (void)dealloc {    
-    [myManager release];
-    [myRequest release];
-    [myIdentifier release];
-    [myData release];
-    [myConnection release];
-    [myDelegate release];
-    
-    [super dealloc];
-}
 
 @end
 
@@ -129,7 +118,7 @@
 }
 
 - (void)connection: (NSURLConnection *)connection didFailWithError: (NSError *)error {
-    XMLRPCRequest *request = [[myRequest retain] autorelease];
+    XMLRPCRequest *request = myRequest;
     
     NSLog(@"The connection, %@, failed with the following error: %@", myIdentifier, [error localizedDescription]);
     
@@ -154,8 +143,8 @@
 
 - (void)connectionDidFinishLoading: (NSURLConnection *)connection {
     if (myData && ([myData length] > 0)) {
-        XMLRPCResponse *response = [[[XMLRPCResponse alloc] initWithData: myData] autorelease];
-        XMLRPCRequest *request = [[myRequest retain] autorelease];
+        XMLRPCResponse *response = [[XMLRPCResponse alloc] initWithData: myData];
+        XMLRPCRequest *request = myRequest;
         
         [myDelegate request: request didReceiveResponse: response];
     }

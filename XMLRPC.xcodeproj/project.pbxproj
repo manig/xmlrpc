@@ -23,13 +23,10 @@
 		07A0A90B1016A51000CEE3C7 /* EmptyStringTestCase.xml in Resources */ = {isa = PBXBuildFile; fileRef = 07A0A9061016A51000CEE3C7 /* EmptyStringTestCase.xml */; };
 		07B0C6050E33A659006453B4 /* NSDataAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 07B0C5F60E33A659006453B4 /* NSDataAdditions.h */; };
 		07B0C6060E33A659006453B4 /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0C5F70E33A659006453B4 /* NSDataAdditions.m */; };
-		07B0C6070E33A659006453B4 /* NSStringAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 07B0C5F80E33A659006453B4 /* NSStringAdditions.h */; };
-		07B0C6080E33A659006453B4 /* NSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0C5F90E33A659006453B4 /* NSStringAdditions.m */; };
 		07B0C6090E33A659006453B4 /* XMLRPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 07B0C5FA0E33A659006453B4 /* XMLRPC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07B0C60A0E33A659006453B4 /* XMLRPCConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 07B0C5FB0E33A659006453B4 /* XMLRPCConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07B0C60B0E33A659006453B4 /* XMLRPCConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0C5FC0E33A659006453B4 /* XMLRPCConnection.m */; };
 		07B0C60E0E33A659006453B4 /* XMLRPCEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 07B0C5FF0E33A659006453B4 /* XMLRPCEncoder.h */; };
-		07B0C60F0E33A659006453B4 /* XMLRPCEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0C6000E33A659006453B4 /* XMLRPCEncoder.m */; };
 		07B0C6100E33A659006453B4 /* XMLRPCRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 07B0C6010E33A659006453B4 /* XMLRPCRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07B0C6110E33A659006453B4 /* XMLRPCRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0C6020E33A659006453B4 /* XMLRPCRequest.m */; };
 		07B0C6120E33A659006453B4 /* XMLRPCResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 07B0C6030E33A659006453B4 /* XMLRPCResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -43,11 +40,14 @@
 		07E761001011788B00E9BDEE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
 		07EF453B0E721A5D009F2708 /* XMLRPCEventBasedParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 07EF45390E721A5D009F2708 /* XMLRPCEventBasedParser.h */; };
 		07EF453C0E721A5D009F2708 /* XMLRPCEventBasedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EF453A0E721A5D009F2708 /* XMLRPCEventBasedParser.m */; };
+		461C6A7917799CBA00C8FC7B /* XMLRPCEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 461C6A7817799CBA00C8FC7B /* XMLRPCEncoder.m */; };
+		461C6A7C17799CEF00C8FC7B /* NSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 461C6A7A17799CEF00C8FC7B /* NSStringAdditions.m */; };
+		461C6A7D17799CEF00C8FC7B /* NSStringAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 461C6A7B17799CEF00C8FC7B /* NSStringAdditions.h */; };
+		461C6A7E17799D3500C8FC7B /* NSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 461C6A7A17799CEF00C8FC7B /* NSStringAdditions.m */; };
+		461C6A7F17799D3500C8FC7B /* XMLRPCEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 461C6A7817799CBA00C8FC7B /* XMLRPCEncoder.m */; };
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
 		903B0DC012F7581200BD6E09 /* NSDataAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 07B0C5F60E33A659006453B4 /* NSDataAdditions.h */; settings = {ATTRIBUTES = (); }; };
 		903B0DC112F7581200BD6E09 /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0C5F70E33A659006453B4 /* NSDataAdditions.m */; };
-		903B0DC212F7581200BD6E09 /* NSStringAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 07B0C5F80E33A659006453B4 /* NSStringAdditions.h */; settings = {ATTRIBUTES = (); }; };
-		903B0DC312F7581200BD6E09 /* NSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0C5F90E33A659006453B4 /* NSStringAdditions.m */; };
 		903B0DC412F7581200BD6E09 /* XMLRPCConnectionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 07452BE20E469C9000A57686 /* XMLRPCConnectionDelegate.h */; settings = {ATTRIBUTES = (); }; };
 		903B0DC512F7581200BD6E09 /* XMLRPC.h in Headers */ = {isa = PBXBuildFile; fileRef = 07B0C5FA0E33A659006453B4 /* XMLRPC.h */; settings = {ATTRIBUTES = (); }; };
 		903B0DC612F7581200BD6E09 /* XMLRPCConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 07B0C5FB0E33A659006453B4 /* XMLRPCConnection.h */; settings = {ATTRIBUTES = (); }; };
@@ -55,7 +55,6 @@
 		903B0DC812F7581200BD6E09 /* XMLRPCConnectionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 075137F90E429E560019E4F6 /* XMLRPCConnectionManager.h */; settings = {ATTRIBUTES = (); }; };
 		903B0DC912F7581200BD6E09 /* XMLRPCConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 075137FA0E429E560019E4F6 /* XMLRPCConnectionManager.m */; };
 		903B0DCA12F7581200BD6E09 /* XMLRPCEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 07B0C5FF0E33A659006453B4 /* XMLRPCEncoder.h */; settings = {ATTRIBUTES = (); }; };
-		903B0DCB12F7581200BD6E09 /* XMLRPCEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0C6000E33A659006453B4 /* XMLRPCEncoder.m */; };
 		903B0DCC12F7581200BD6E09 /* XMLRPCEventBasedParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 07EF45390E721A5D009F2708 /* XMLRPCEventBasedParser.h */; settings = {ATTRIBUTES = (); }; };
 		903B0DCD12F7581200BD6E09 /* XMLRPCEventBasedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EF453A0E721A5D009F2708 /* XMLRPCEventBasedParser.m */; };
 		903B0DCE12F7581200BD6E09 /* XMLRPCEventBasedParserDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0707047610114B9400CB7702 /* XMLRPCEventBasedParserDelegate.h */; settings = {ATTRIBUTES = (); }; };
@@ -105,13 +104,10 @@
 		07A0A9061016A51000CEE3C7 /* EmptyStringTestCase.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = EmptyStringTestCase.xml; path = "Resources/Test Cases/EmptyStringTestCase.xml"; sourceTree = "<group>"; };
 		07B0C5F60E33A659006453B4 /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
 		07B0C5F70E33A659006453B4 /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
-		07B0C5F80E33A659006453B4 /* NSStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringAdditions.h; sourceTree = "<group>"; };
-		07B0C5F90E33A659006453B4 /* NSStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringAdditions.m; sourceTree = "<group>"; };
 		07B0C5FA0E33A659006453B4 /* XMLRPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLRPC.h; sourceTree = "<group>"; };
 		07B0C5FB0E33A659006453B4 /* XMLRPCConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLRPCConnection.h; sourceTree = "<group>"; };
 		07B0C5FC0E33A659006453B4 /* XMLRPCConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLRPCConnection.m; sourceTree = "<group>"; };
 		07B0C5FF0E33A659006453B4 /* XMLRPCEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLRPCEncoder.h; sourceTree = "<group>"; };
-		07B0C6000E33A659006453B4 /* XMLRPCEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLRPCEncoder.m; sourceTree = "<group>"; };
 		07B0C6010E33A659006453B4 /* XMLRPCRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLRPCRequest.h; sourceTree = "<group>"; };
 		07B0C6020E33A659006453B4 /* XMLRPCRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLRPCRequest.m; sourceTree = "<group>"; };
 		07B0C6030E33A659006453B4 /* XMLRPCResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLRPCResponse.h; sourceTree = "<group>"; };
@@ -128,6 +124,9 @@
 		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		461C6A7817799CBA00C8FC7B /* XMLRPCEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLRPCEncoder.m; sourceTree = "<group>"; };
+		461C6A7A17799CEF00C8FC7B /* NSStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringAdditions.m; sourceTree = "<group>"; };
+		461C6A7B17799CEF00C8FC7B /* NSStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringAdditions.h; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* XMLRPC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XMLRPC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		903B0DB612F7574800BD6E09 /* libXMLRPC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libXMLRPC.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -228,8 +227,8 @@
 			children = (
 				07B0C5F60E33A659006453B4 /* NSDataAdditions.h */,
 				07B0C5F70E33A659006453B4 /* NSDataAdditions.m */,
-				07B0C5F80E33A659006453B4 /* NSStringAdditions.h */,
-				07B0C5F90E33A659006453B4 /* NSStringAdditions.m */,
+				461C6A7B17799CEF00C8FC7B /* NSStringAdditions.h */,
+				461C6A7A17799CEF00C8FC7B /* NSStringAdditions.m */,
 			);
 			name = Additions;
 			sourceTree = "<group>";
@@ -293,7 +292,7 @@
 				075137F90E429E560019E4F6 /* XMLRPCConnectionManager.h */,
 				075137FA0E429E560019E4F6 /* XMLRPCConnectionManager.m */,
 				07B0C5FF0E33A659006453B4 /* XMLRPCEncoder.h */,
-				07B0C6000E33A659006453B4 /* XMLRPCEncoder.m */,
+				461C6A7817799CBA00C8FC7B /* XMLRPCEncoder.m */,
 				07EF45390E721A5D009F2708 /* XMLRPCEventBasedParser.h */,
 				07EF453A0E721A5D009F2708 /* XMLRPCEventBasedParser.m */,
 				0707047610114B9400CB7702 /* XMLRPCEventBasedParserDelegate.h */,
@@ -342,7 +341,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				07B0C6050E33A659006453B4 /* NSDataAdditions.h in Headers */,
-				07B0C6070E33A659006453B4 /* NSStringAdditions.h in Headers */,
 				07B0C6090E33A659006453B4 /* XMLRPC.h in Headers */,
 				07B0C6170E33A672006453B4 /* XMLRPC.pch in Headers */,
 				07B0C60A0E33A659006453B4 /* XMLRPCConnection.h in Headers */,
@@ -353,6 +351,7 @@
 				0707047810114B9400CB7702 /* XMLRPCEventBasedParserDelegate.h in Headers */,
 				07B0C6100E33A659006453B4 /* XMLRPCRequest.h in Headers */,
 				07B0C6120E33A659006453B4 /* XMLRPCResponse.h in Headers */,
+				461C6A7D17799CEF00C8FC7B /* NSStringAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +360,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				903B0DC012F7581200BD6E09 /* NSDataAdditions.h in Headers */,
-				903B0DC212F7581200BD6E09 /* NSStringAdditions.h in Headers */,
 				903B0DC412F7581200BD6E09 /* XMLRPCConnectionDelegate.h in Headers */,
 				903B0DC512F7581200BD6E09 /* XMLRPC.h in Headers */,
 				903B0DC612F7581200BD6E09 /* XMLRPCConnection.h in Headers */,
@@ -551,14 +549,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				07B0C6060E33A659006453B4 /* NSDataAdditions.m in Sources */,
-				07B0C6080E33A659006453B4 /* NSStringAdditions.m in Sources */,
 				07B0C60B0E33A659006453B4 /* XMLRPCConnection.m in Sources */,
 				075137FC0E429E560019E4F6 /* XMLRPCConnectionManager.m in Sources */,
-				07B0C60F0E33A659006453B4 /* XMLRPCEncoder.m in Sources */,
 				07EF453C0E721A5D009F2708 /* XMLRPCEventBasedParser.m in Sources */,
 				0707047910114B9400CB7702 /* XMLRPCEventBasedParserDelegate.m in Sources */,
 				07B0C6110E33A659006453B4 /* XMLRPCRequest.m in Sources */,
 				07B0C6130E33A659006453B4 /* XMLRPCResponse.m in Sources */,
+				461C6A7917799CBA00C8FC7B /* XMLRPCEncoder.m in Sources */,
+				461C6A7C17799CEF00C8FC7B /* NSStringAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,11 +564,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				461C6A7E17799D3500C8FC7B /* NSStringAdditions.m in Sources */,
+				461C6A7F17799D3500C8FC7B /* XMLRPCEncoder.m in Sources */,
 				903B0DC112F7581200BD6E09 /* NSDataAdditions.m in Sources */,
-				903B0DC312F7581200BD6E09 /* NSStringAdditions.m in Sources */,
 				903B0DC712F7581200BD6E09 /* XMLRPCConnection.m in Sources */,
 				903B0DC912F7581200BD6E09 /* XMLRPCConnectionManager.m in Sources */,
-				903B0DCB12F7581200BD6E09 /* XMLRPCEncoder.m in Sources */,
 				903B0DCD12F7581200BD6E09 /* XMLRPCEventBasedParser.m in Sources */,
 				903B0DCF12F7581200BD6E09 /* XMLRPCEventBasedParserDelegate.m in Sources */,
 				903B0DD112F7581200BD6E09 /* XMLRPCRequest.m in Sources */,
@@ -671,6 +669,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -691,6 +690,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
