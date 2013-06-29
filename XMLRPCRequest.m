@@ -52,7 +52,7 @@
     NSArray *parameters = nil;
     
     if (parameter) {
-        parameters = [NSArray arrayWithObject: parameter];
+        parameters = @[parameter];
     }
     
     [myXMLEncoder setMethod: method withParameters: parameters];
@@ -65,8 +65,9 @@
 - (void) setParameter:(id)parameter {
     NSArray *parameters = nil;
     
-    if (parameter) {
-        parameters = [NSArray arrayWithObject: parameter];
+    if (parameter)
+    {
+        parameters = @[parameter];
     }
     
     [myXMLEncoder setParameters:parameters];
@@ -96,7 +97,7 @@
 
 - (NSURLRequest *)request {
     NSData *content = [[self body] dataUsingEncoding: NSUTF8StringEncoding];
-    NSNumber *contentLength = [NSNumber numberWithInt: [content length]];
+    NSNumber *contentLength = @(content.length);
     
     if (!myRequest) {
         return nil;

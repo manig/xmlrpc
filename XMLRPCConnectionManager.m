@@ -47,7 +47,7 @@ static XMLRPCConnectionManager *sharedInstance = nil;
     XMLRPCConnection *newConnection = [[XMLRPCConnection alloc] initWithXMLRPCRequest: request delegate: delegate manager: self];
     NSString *identifier = [newConnection identifier];
     
-    [myConnections setObject: newConnection forKey: identifier];
+    myConnections[identifier] = newConnection;
     
     
     return identifier;
@@ -66,7 +66,7 @@ static XMLRPCConnectionManager *sharedInstance = nil;
 #pragma mark -
 
 - (XMLRPCConnection *)connectionForIdentifier: (NSString *)identifier {
-    return [myConnections objectForKey: identifier];
+    return myConnections[identifier];
 }
 
 #pragma mark -

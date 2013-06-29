@@ -192,7 +192,7 @@
     while (key = [enumerator nextObject]) {
         [buffer appendString: @"<member>"];
         [buffer appendFormat: @"<name>%@</name>", [self encodeString: key omitTag: YES]];
-        [buffer appendString: [self encodeObject: [dictionary objectForKey: key]]];
+        [buffer appendString: [self encodeObject: dictionary[key]]];
         [buffer appendString: @"</member>"];
     }
     
@@ -212,7 +212,7 @@
 }
 
 - (NSString *)encodeNumber: (NSNumber *)number {
-    NSString *numberType = [NSString stringWithCString: [number objCType] encoding: NSUTF8StringEncoding];
+    NSString *numberType = @([number objCType]);
     
     if ([numberType isEqualToString: @"d"]) {
         return [self valueTag: @"double" value: [number stringValue]];

@@ -45,6 +45,8 @@
 		461C6A7D17799CEF00C8FC7B /* NSStringAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 461C6A7B17799CEF00C8FC7B /* NSStringAdditions.h */; };
 		461C6A7E17799D3500C8FC7B /* NSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 461C6A7A17799CEF00C8FC7B /* NSStringAdditions.m */; };
 		461C6A7F17799D3500C8FC7B /* XMLRPCEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 461C6A7817799CBA00C8FC7B /* XMLRPCEncoder.m */; };
+		468C157F177DCE540001C9E8 /* TTPSharedNetworkActivityIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 468C157D177DCE540001C9E8 /* TTPSharedNetworkActivityIndicator.h */; };
+		468C1580177DCE540001C9E8 /* TTPSharedNetworkActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 468C157E177DCE540001C9E8 /* TTPSharedNetworkActivityIndicator.m */; };
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
 		903B0DC012F7581200BD6E09 /* NSDataAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 07B0C5F60E33A659006453B4 /* NSDataAdditions.h */; settings = {ATTRIBUTES = (); }; };
 		903B0DC112F7581200BD6E09 /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0C5F70E33A659006453B4 /* NSDataAdditions.m */; };
@@ -127,6 +129,8 @@
 		461C6A7817799CBA00C8FC7B /* XMLRPCEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLRPCEncoder.m; sourceTree = "<group>"; };
 		461C6A7A17799CEF00C8FC7B /* NSStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringAdditions.m; sourceTree = "<group>"; };
 		461C6A7B17799CEF00C8FC7B /* NSStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringAdditions.h; sourceTree = "<group>"; };
+		468C157D177DCE540001C9E8 /* TTPSharedNetworkActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTPSharedNetworkActivityIndicator.h; path = "../../The Timothy Partnership iPad Application/TTPSharedNetworkActivityIndicator.h"; sourceTree = "<group>"; };
+		468C157E177DCE540001C9E8 /* TTPSharedNetworkActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTPSharedNetworkActivityIndicator.m; path = "../../The Timothy Partnership iPad Application/TTPSharedNetworkActivityIndicator.m"; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* XMLRPC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XMLRPC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		903B0DB612F7574800BD6E09 /* libXMLRPC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libXMLRPC.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -284,6 +288,8 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				468C157D177DCE540001C9E8 /* TTPSharedNetworkActivityIndicator.h */,
+				468C157E177DCE540001C9E8 /* TTPSharedNetworkActivityIndicator.m */,
 				07B0C6140E33A65E006453B4 /* Additions */,
 				07452BDC0E469C6900A57686 /* Delegates */,
 				07B0C5FA0E33A659006453B4 /* XMLRPC.h */,
@@ -352,6 +358,7 @@
 				07B0C6100E33A659006453B4 /* XMLRPCRequest.h in Headers */,
 				07B0C6120E33A659006453B4 /* XMLRPCResponse.h in Headers */,
 				461C6A7D17799CEF00C8FC7B /* NSStringAdditions.h in Headers */,
+				468C157F177DCE540001C9E8 /* TTPSharedNetworkActivityIndicator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,6 +564,7 @@
 				07B0C6130E33A659006453B4 /* XMLRPCResponse.m in Sources */,
 				461C6A7917799CBA00C8FC7B /* XMLRPCEncoder.m in Sources */,
 				461C6A7C17799CEF00C8FC7B /* NSStringAdditions.m in Sources */,
+				468C1580177DCE540001C9E8 /* TTPSharedNetworkActivityIndicator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

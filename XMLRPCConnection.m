@@ -3,6 +3,7 @@
 #import "XMLRPCRequest.h"
 #import "XMLRPCResponse.h"
 #import "NSStringAdditions.h"
+#import "TTPSharedNetworkActivityIndicator.h"
 
 @interface XMLRPCConnection (XMLRPCConnectionPrivate)
 
@@ -40,12 +41,13 @@
         
         myDelegate = delegate;
         
-        if (myConnection) {
-            NSLog(@"The connection, %@, has been established!", myIdentifier);
-        } else {
-            NSLog(@"The connection, %@, could not be established!", myIdentifier);
-            
-            
+        if (myConnection)
+        {
+            TTPSharedNetworkActivityIndicator *sharedNetworkActivityIndicator = [TTPSharedNetworkActivityIndicator sharedNetworkActivityIndicator];
+            sharedNetworkActivityIndicator.networkActivityCount ++;
+        }
+        else
+        {
             return nil;
         }
     }
@@ -120,10 +122,10 @@
 - (void)connection: (NSURLConnection *)connection didFailWithError: (NSError *)error {
     XMLRPCRequest *request = myRequest;
     
-    NSLog(@"The connection, %@, failed with the following error: %@", myIdentifier, [error localizedDescription]);
     
     [myDelegate request: request didFailWithError: error];
-    
+    TTPSharedNetworkActivityIndicator *sharedNetworkActivityIndicator = [TTPSharedNetworkActivityIndicator sharedNetworkActivityIndicator];
+    sharedNetworkActivityIndicator.networkActivityCount --;
     [myManager closeConnectionForIdentifier: myIdentifier];
 }
 
@@ -141,14 +143,18 @@
     [myDelegate request: myRequest didCancelAuthenticationChallenge: challenge];
 }
 
-- (void)connectionDidFinishLoading: (NSURLConnection *)connection {
-    if (myData && ([myData length] > 0)) {
+- (void)connectionDidFinishLoading: (NSURLConnection *)connection
+{
+    if (myData && ([myData length] > 0))
+    {
         XMLRPCResponse *response = [[XMLRPCResponse alloc] initWithData: myData];
         XMLRPCRequest *request = myRequest;
-        
+        //NSLog(@"xml response %@",response.object);
         [myDelegate request: request didReceiveResponse: response];
     }
-    
+
+    TTPSharedNetworkActivityIndicator *sharedNetworkActivityIndicator = [TTPSharedNetworkActivityIndicator sharedNetworkActivityIndicator];
+    sharedNetworkActivityIndicator.networkActivityCount --;
     [myManager closeConnectionForIdentifier: myIdentifier];
 }
 
