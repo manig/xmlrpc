@@ -38,7 +38,8 @@
         myData = [[NSMutableData alloc] init];
         
         myConnection = [[NSURLConnection alloc] initWithRequest: [request request] delegate: self];
-        
+        //NSLog(@"request body %@", [[NSString alloc]initWithData: myConnection.originalRequest.HTTPBody encoding:NSUTF8StringEncoding]);
+
         myDelegate = delegate;
         
         if (myConnection)
@@ -149,7 +150,9 @@
     {
         XMLRPCResponse *response = [[XMLRPCResponse alloc] initWithData: myData];
         XMLRPCRequest *request = myRequest;
+
         //NSLog(@"xml response %@",response.object);
+
         [myDelegate request: request didReceiveResponse: response];
     }
 
