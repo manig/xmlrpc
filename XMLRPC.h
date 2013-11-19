@@ -3,3 +3,4 @@
 #import <XMLRPC/XMLRPCConnectionManager.h>
 #import <XMLRPC/XMLRPCResponse.h>
 #import <XMLRPC/XMLRPCRequest.h>
+#import <XMLRPC/TTPSharedNetworkActivityIndicator.h>

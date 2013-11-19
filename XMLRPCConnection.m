@@ -38,7 +38,7 @@
         myData = [[NSMutableData alloc] init];
         
         myConnection = [[NSURLConnection alloc] initWithRequest: [request request] delegate: self];
-        //NSLog(@"request body %@", [[NSString alloc]initWithData: myConnection.originalRequest.HTTPBody encoding:NSUTF8StringEncoding]);
+        ////NSLog(@"request body %@", [[NSString alloc]initWithData: myConnection.originalRequest.HTTPBody encoding:NSUTF8StringEncoding]);
 
         myDelegate = delegate;
         
@@ -151,7 +151,11 @@
         XMLRPCResponse *response = [[XMLRPCResponse alloc] initWithData: myData];
         XMLRPCRequest *request = myRequest;
 
-        //NSLog(@"xml response %@",response.object);
+        if ([request.method isEqualToString:@"core_course_get_contents"])
+        {
+            NSLog(@"xml response %@",response.object);
+            NSLog(@"xml response %@",myDelegate);
+        }
 
         [myDelegate request: request didReceiveResponse: response];
     }

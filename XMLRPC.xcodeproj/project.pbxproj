@@ -45,9 +45,8 @@
 		461C6A7D17799CEF00C8FC7B /* NSStringAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 461C6A7B17799CEF00C8FC7B /* NSStringAdditions.h */; };
 		461C6A7E17799D3500C8FC7B /* NSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 461C6A7A17799CEF00C8FC7B /* NSStringAdditions.m */; };
 		461C6A7F17799D3500C8FC7B /* XMLRPCEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 461C6A7817799CBA00C8FC7B /* XMLRPCEncoder.m */; };
-		46AD357E17919017004C122B /* TTPSharedNetworkActivityIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 46AD357C17919017004C122B /* TTPSharedNetworkActivityIndicator.h */; };
-		46AD357F17919017004C122B /* TTPSharedNetworkActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 46AD357D17919017004C122B /* TTPSharedNetworkActivityIndicator.m */; };
-		46AD358117919031004C122B /* TTPSharedNetworkActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 46AD357D17919017004C122B /* TTPSharedNetworkActivityIndicator.m */; };
+		46D8E1E21815207A005649F1 /* TTPSharedNetworkActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 46AD357D17919017004C122B /* TTPSharedNetworkActivityIndicator.m */; };
+		46D8E1E31815207F005649F1 /* TTPSharedNetworkActivityIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 46AD357C17919017004C122B /* TTPSharedNetworkActivityIndicator.h */; };
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
 		903B0DC012F7581200BD6E09 /* NSDataAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 07B0C5F60E33A659006453B4 /* NSDataAdditions.h */; settings = {ATTRIBUTES = (); }; };
 		903B0DC112F7581200BD6E09 /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0C5F70E33A659006453B4 /* NSDataAdditions.m */; };
@@ -357,9 +356,9 @@
 				07EF453B0E721A5D009F2708 /* XMLRPCEventBasedParser.h in Headers */,
 				0707047810114B9400CB7702 /* XMLRPCEventBasedParserDelegate.h in Headers */,
 				07B0C6100E33A659006453B4 /* XMLRPCRequest.h in Headers */,
+				46D8E1E31815207F005649F1 /* TTPSharedNetworkActivityIndicator.h in Headers */,
 				07B0C6120E33A659006453B4 /* XMLRPCResponse.h in Headers */,
 				461C6A7D17799CEF00C8FC7B /* NSStringAdditions.h in Headers */,
-				46AD357E17919017004C122B /* TTPSharedNetworkActivityIndicator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,7 +446,7 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0440;
+				LastUpgradeCheck = 0500;
 			};
 			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "XMLRPC" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -563,9 +562,9 @@
 				0707047910114B9400CB7702 /* XMLRPCEventBasedParserDelegate.m in Sources */,
 				07B0C6110E33A659006453B4 /* XMLRPCRequest.m in Sources */,
 				07B0C6130E33A659006453B4 /* XMLRPCResponse.m in Sources */,
+				46D8E1E21815207A005649F1 /* TTPSharedNetworkActivityIndicator.m in Sources */,
 				461C6A7917799CBA00C8FC7B /* XMLRPCEncoder.m in Sources */,
 				461C6A7C17799CEF00C8FC7B /* NSStringAdditions.m in Sources */,
-				46AD357F17919017004C122B /* TTPSharedNetworkActivityIndicator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,7 +572,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46AD358117919031004C122B /* TTPSharedNetworkActivityIndicator.m in Sources */,
 				461C6A7E17799D3500C8FC7B /* NSStringAdditions.m in Sources */,
 				461C6A7F17799D3500C8FC7B /* XMLRPCEncoder.m in Sources */,
 				903B0DC112F7581200BD6E09 /* NSDataAdditions.m in Sources */,
@@ -612,7 +610,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0799AF0B0F67227F00B71B22 /* XMLRPCUnitTestsDevelopment.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -626,7 +623,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0799AF0C0F67227F00B71B22 /* XMLRPCUnitTestsRelease.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -640,7 +636,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0799AF100F6722D600B71B22 /* XMLRPCDevelopment.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				SKIP_INSTALL = YES;
 				VERSION_INFO_FILE = "";
@@ -651,7 +646,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0799AF110F6722D600B71B22 /* XMLRPCRelease.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				SKIP_INSTALL = YES;
 				VERSION_INFO_FILE = "";
@@ -662,7 +656,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 07127C590F4266F4009C7476 /* CommonDevelopment.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 			};
 			name = Development;
 		};
@@ -670,7 +663,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 07127C5A0F4266F4009C7476 /* CommonRelease.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 			};
 			name = Release;
 		};
@@ -678,7 +670,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Real World Technology Solutions Pty Ltd (H2LX99GBPZ)";
 				COPY_PHASE_STRIP = NO;
@@ -691,7 +682,7 @@
 				PRODUCT_NAME = XMLRPC;
 				PROVISIONING_PROFILE = "DAB72428-D10B-463A-A375-899C07159FC8";
 				PUBLIC_HEADERS_FOLDER_PATH = /headers/;
-				SDKROOT = iphoneos6.1;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				VALID_ARCHS = "armv7 armv6 i386";
 			};
@@ -701,7 +692,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Real World Technology Solutions Pty Ltd (H2LX99GBPZ)";
 				COPY_PHASE_STRIP = YES;
@@ -712,7 +702,7 @@
 				PRODUCT_NAME = XMLRPC;
 				PROVISIONING_PROFILE = "DAB72428-D10B-463A-A375-899C07159FC8";
 				PUBLIC_HEADERS_FOLDER_PATH = /headers/;
-				SDKROOT = iphoneos6.1;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				VALID_ARCHS = "armv7 armv6 i386";
 				ZERO_LINK = NO;
